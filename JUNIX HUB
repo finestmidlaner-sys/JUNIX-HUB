@@ -1,0 +1,51 @@
+--[[
+    JUNIXHUB â€” Pure Lua Edition
+    This is a DEMO of the menu concept that runs in standard Lua 5.4.
+    In Roblox Studio, use the original LocalScript version.
+]]
+
+local Config = {
+    WalkSpeed = 32,
+    FlySpeed = 60,
+    SelectedEgg = "Any",
+    SelectedRarity = "Any",
+    SelectedMutation = "Any",
+    SelectedArea = "Any",
+    AutoSteal = false,
+    InstantSteal = false,
+    FastWalk = false,
+    Fly = false,
+    AutoTreadmill = false
+}
+
+-- Simulate toggle buttons
+local toggles = {
+    "Fast Walk: OFF",
+    "Fly: OFF",
+    "Auto Steal: OFF",
+    "Instant Steal: OFF",
+    "Auto Treadmill: OFF"
+}
+
+local filters = {
+    "Egg: ANY",
+    "Rarity: ANY",
+    "Mutation: ANY",
+    "Area: ANY"
+}
+
+print("=== JUNIXHUB (Pure Lua Demo) ===")
+print()
+print("[Filters]")
+for _, f in ipairs(filters) do
+    print("  " .. f)
+end
+print()
+print("[Toggles]")
+for _, t in ipairs(toggles) do
+    print("  " .. t)
+end
+print()
+print("JunixHub loaded successfully.")
+print("(This is a standalone demo. The full Roblox version")
+print(" requires Roblox Studio to run.)")
